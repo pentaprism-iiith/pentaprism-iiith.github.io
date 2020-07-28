@@ -1,7 +1,7 @@
-(function ($) {
-    let loginUrl = "https://login.microsoftonline.com/organizations/oauth2/v2.0/authorize?client_id=7224e642-a82a-46da-93b2-f6fedff4dad0&response_type=code&redirect_uri=https%3A%2F%2Fpentaprism-iiith.github.io&response_mode=query&scope=openid&state=12345"
-    window.location.href = loginUrl;
-})(jQuery);
+// (function ($) {
+//     let loginUrl = "https://login.microsoftonline.com/organizations/oauth2/v2.0/authorize?client_id=7224e642-a82a-46da-93b2-f6fedff4dad0&response_type=code&redirect_uri=https%3A%2F%2Fpentaprism-iiith.github.io&response_mode=query&scope=openid&state=12345"
+//     window.location.href = loginUrl;
+// })(jQuery);
 
 (function ($) {
     var image1 = new Image();
