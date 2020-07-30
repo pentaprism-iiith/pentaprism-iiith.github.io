@@ -5,15 +5,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pentaprism | The photography club of IIIT-H</title>
-    <link rel="shortcut icon" href="res/images/pentaprism_logo_icon.png">
-</head>
-<script>
-    let loginUrl = "https://login.microsoftonline.com/organizations/oauth2/v2.0/authorize?client_id=4d3db8b3-3497-4dfc-acf9-4257113e4a32&response_type=code&redirect_uri=https%3A%2F%2Fpentaprism-iiith.github.io%2Fcontest.html&response_mode=query&scope=openid&state=12345&code_challenge=_r67lcj4MoDNBAkhxS7ke_YKhKCBAiM0SgzNCagbCxo&code_challenge_method=S256";
-</script>
 
-<body onload="window.location.href = loginUrl;">
-    <br />
-    <h1 align="center">Taking you to login page..</h1>
+    <link rel="stylesheet" href="res/styles/style.css">
+    <link rel="stylesheet" href="res/styles/bootstrap.min.css">
+    <link rel="shortcut icon" href="res/images/pentaprism_logo_icon.png">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="res/scripts/init.js"></script>
+</head>
+
+<body onload="init()">
+    <div id="main-wrapper" class="m-0">
+        <div id="page1" class="page m-0 center-flex">
+
+        </div>
+    </div>
+    <div class="mx-auto" id="camera-gif-figure">
+        <img class="center" id="camera-gif" src="./res/images/camera.png" alt="Static Image"
+            data-alt="./res/images/animation.gif">
+    </div>
 </body>
 
 </html>

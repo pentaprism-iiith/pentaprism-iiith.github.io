@@ -1,8 +1,6 @@
 (function ($) {
     var image1 = new Image();
     image.src = "./res/images/animation.gif";
-    var image2 = new Image();
-    image.src = "./res/images/bg-9.jpg";
 })(jQuery);
 
 function init() {
@@ -18,15 +16,10 @@ function init() {
     
     setTimeout(() => {
         document.getElementById("camera-gif-figure").style.opacity = '0';
-        document.getElementById("main-wrapper").style.backgroundImage = "url('./res/images/bg-9.jpg')";
-        document.getElementsByTagName("html")[0].style.overflowY = "scroll";
     }, 2600);
 
     setTimeout(() => {
-        document.getElementById("main-wrapper").style.opacity = '1';
+        const formLink = "https://forms.gle/LAnKh3azJoBJm2TUA";
+        window.location.href = formLink; 
     }, 2700);
-
-    setTimeout(() => {
-        document.getElementById("page1").style.opacity = '1';
-    }, 3200);
 }
