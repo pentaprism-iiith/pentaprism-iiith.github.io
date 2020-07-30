@@ -1,7 +1,7 @@
-(function ($) {
-    var image1 = new Image();
-    image.src = "./res/images/animation.gif";
-})(jQuery);
+// (function ($) {
+//     var image1 = new Image();
+//     image.src = "./res/images/animation.gif";
+// })(jQuery);
 
 function init() {
     $("#camera-gif-figure").animate({
@@ -10,16 +10,16 @@ function init() {
         opacity: "1",
     });
 
-    setTimeout(() => {
-        $("#camera-gif").attr('src', "./res/images/animation.gif");
-    }, 500);
+    // setTimeout(() => {
+    //     $("#camera-gif").attr('src', "./res/images/animation.gif");
+    // }, 500);
     
     setTimeout(() => {
-        document.getElementById("camera-gif-figure").style.opacity = '0';
-    }, 2600);
+        document.getElementById("camera-gif").style.opacity = '0';
+    }, 1800);
 
     setTimeout(() => {
         const formLink = "https://forms.gle/LAnKh3azJoBJm2TUA";
         window.location.href = formLink; 
-    }, 2700);
+    }, 2500);
 }

@@ -62,12 +62,13 @@ html body {
     z-index: -100;
     opacity: 0;
     width: 100vw;
+    /* transition: ease 0.3s opacity; */
     /* height: 300px; */
 }
 
 #camera-gif {
     position: relative;
-    transition: ease 0.5s opacity;
+    transition: ease 0.4s opacity;
     bottom: 0px;
     width: 30vw;
     max-width: 300px;
