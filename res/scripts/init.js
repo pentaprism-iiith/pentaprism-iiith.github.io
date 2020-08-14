@@ -19,8 +19,12 @@ function init() {
     }, 1800);
 
     setTimeout(() => {
-        document.getElementById("camera-gif-figure").style.opacity = '0';
-        document.getElementById("main-wrapper").style.opacity = '1';
+        const formLink = "https://forms.gle/tfnnxsLpcU1hgUdG6";
+        window.location.href = formLink; 
+        
+        // document.getElementById("camera-gif-figure").style.opacity = '0';
+        // document.getElementById("main-wrapper").style.opacity = '1';
+
         // document.getElementsByTagName("body")[0].style.backgroundColor = "whitesmoke";
     }, 2500);
 }
