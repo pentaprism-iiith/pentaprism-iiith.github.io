@@ -10,7 +10,7 @@
             window.location.href = "./index_mobile.html";
         }
     </script>
-    <link rel="stylesheet" href="./res/styles/style.css">
+    <!-- <link rel="stylesheet" href="./res/styles/style.css"> -->
     <link rel="stylesheet" href="./res/styles/test.css">
     <link rel="stylesheet" href="./res/styles/bootstrap.min.css">
     <link rel="shortcut icon" href="./res/images/pentaprism_logo_icon.png">
@@ -22,6 +22,10 @@
 </head>
 
 <body onload="init()">
+    <div id="load">
+        <h1>Please wait while it loads.. It might take a bit..</h1>
+        <a id="page2link" href="page2.html">Slow internet? Don't worry, we've got you covered! Click here</a>
+    </div>
     <div id="main-wrapper">
         <div class="page p-4">
             <h1>Swachitra</h1>
@@ -30,9 +34,12 @@
             <div class="img-wrapper my-4">
                 <div id="zoom-img-container" class="zoom-img-container shadow-lg center">
                     <a id="cross" href="" onclick="exitFullscreen()">&times;</a>
-                    <div class="zoom-img" style="background-image: url('./res/images/image0.jpg')"></div>
+                    <div class="zoom-img" style="background-image: url('./res/images/mosaic-final-2m.jpg')"></div>
                 </div>
-                <button id="fullscreen-btn" class="btn btn-primary my-3">View in Fullscreen</button>
+                <button id="fullscreen-btn" class="btn btn-primary my-3">View in
+                    Fullscreen</button>&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="./res/images/mosaic-final.jpg" download><button class="btn btn-primary my-3">Download Full
+                        Res</button></a>
                 <br />
                 <a id="page2link" href="page2.html">Slow internet? Don't worry, we've got you covered! Click here</a>
                 <div id="text" class="container mt-3 p-0">
@@ -61,7 +68,7 @@
             const transAmtX = ((e.pageX - $(this).offset().left) / $(this).width()) * 100;
             $(this).children('.zoom-img').css({ 'transform-origin': + transAmtX + '% ' + transAmtY + '%' });
         });
-        $('.zoom-img-container').on('mouseover', function () { $(this).children('.zoom-img').css({ 'transform': 'scale(3)' }); });
+        $('.zoom-img-container').on('mouseover', function () { $(this).children('.zoom-img').css({ 'transform': 'scale(7)' }); });
         $('.zoom-img-container').on('mouseout', function () { $(this).children('.zoom-img').css({ 'transform': 'scale(1)' }); });
     </script>
 

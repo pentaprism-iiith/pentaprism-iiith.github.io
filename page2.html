@@ -5,34 +5,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pentaprism | The photography club of IIIT-H</title>
-
-    <link rel="stylesheet" href="./res/styles/style.css">
+    <script>
+        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+            window.location.href = "./index_mobile.html";
+        }
+    </script>
+    <!-- <link rel="stylesheet" href="./res/styles/style.css"> -->
     <link rel="stylesheet" href="./res/styles/test.css">
     <link rel="stylesheet" href="./res/styles/bootstrap.min.css">
     <link rel="shortcut icon" href="./res/images/pentaprism_logo_icon.png">
 
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"
         integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="./res/scripts/init.js"></script>
+
 </head>
 
-<body onload="document.getElementById('main-wrapper').style.opacity = '1';">
+<body onload="document.getElementById('load').style.opacity = '0'; document.getElementById('main-wrapper').style.opacity = '1';">
+    <div id="load">
+        <h1>Please wait while it loads.. It might take a bit..</h1>
+        <!-- <a id="page2link" href="page2.html">Slow internet? Don't worry, we've got you covered! Click here</a> -->
+    </div>
     <div id="main-wrapper">
         <div class="page p-4">
             <h1>Swachitra</h1>
             <h3>Hover over the image to zoom</h3>
-            <h4>
-              If you're on the phone, tap on the image to zoom. Tap outisde the image to zoom out.
-              Do consider switching to the desktop site for a better viewing experience :)
-            </h4>
 
             <div class="img-wrapper my-4">
                 <div id="zoom-img-container" class="zoom-img-container shadow-lg center">
                     <a id="cross" href="" onclick="exitFullscreen()">&times;</a>
-                    <div class="zoom-img" style="background-image: url('./res/images/image0.jpg')"></div>
+                    <div class="zoom-img" style="background-image: url('./res/images/mosaic-final-low.jpg')"></div>
                 </div>
-                <button id="fullscreen-btn" class="btn btn-primary my-3">View in Fullscreen</button>
+                <button id="fullscreen-btn" class="btn btn-primary my-3">View in Fullscreen</button>&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="./res/images/mosaic-final.jpg" download><button class="btn btn-primary my-3">Download Full Res</button></a>
                 <br />
                 &nbsp;
+                <!-- <a id="page2link" href="page2.html">Slow internet? Don't worry, we've got you covered! Click here</a> -->
                 <div id="text" class="container mt-3 p-0">
                     <p>
                         On the occasion of the 74<sup>th</sup> Independance Day, the Art Society of IIIT-H
@@ -46,6 +54,11 @@
             </div>
         </div>
     </div>
+    <!-- <div class="mx-auto" id="camera-gif-figure">
+        <img class="center2" id="camera-gif" src="./res/images/pentaprism_logo-transparent.png" alt="Static Image"
+            data-alt="./res/images/animation.gif">
+    </div> -->
+
 
     <!-- SCRIPT FOR ZOOMING IMAGE ON HOVER -->
     <script>
@@ -54,7 +67,7 @@
             const transAmtX = ((e.pageX - $(this).offset().left) / $(this).width()) * 100;
             $(this).children('.zoom-img').css({ 'transform-origin': + transAmtX + '% ' + transAmtY + '%' });
         });
-        $('.zoom-img-container').on('mouseover', function () { $(this).children('.zoom-img').css({ 'transform': 'scale(3)' }); });
+        $('.zoom-img-container').on('mouseover', function () { $(this).children('.zoom-img').css({ 'transform': 'scale(5)' }); });
         $('.zoom-img-container').on('mouseout', function () { $(this).children('.zoom-img').css({ 'transform': 'scale(1)' }); });
     </script>
 

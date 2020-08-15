@@ -19,6 +19,7 @@ body {
 
     /* padding-top: 150px; */
     font-family: "Lato Bold";
+    opacity: 0;
 }
 
 .page {
@@ -32,6 +33,11 @@ body {
 sup {
     vertical-align: super;
     font-size: smaller;
+}
+
+#load {
+    margin-top: 20px;
+    text-align: center;
 }
 
 .page h1 {
@@ -121,7 +127,7 @@ sup {
 
 .zoom-img-container {
     overflow: hidden;
-    height: 400px;
+    height: 500px;
     width: 800px;
     max-width: 90%;
     position: relative;
@@ -134,9 +140,9 @@ sup {
     height: 100%;
     width: 100%;
     position: absolute;
-    transition: transform 1s ease-out;
+    transition: transform 0.5s ease;
     background-position: center;
-    background-size: cover;
+    background-size: contain;
     border-radius: 10px;
 }
 

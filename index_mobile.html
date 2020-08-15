@@ -16,7 +16,11 @@
 
 </head>
 
-<body onload="document.getElementById('main-wrapper').style.opacity = '1';">
+<body onload="document.getElementById('load').style.opacity = '0'; document.getElementById('main-wrapper').style.opacity = '1';">
+    <div id="load">
+        <h1>Please wait while it loads.. It might take a bit..</h1>
+        <!-- <a id="page2link" href="page2.html">Slow internet? Don't worry, we've got you covered! Click here</a> -->
+    </div>
     <div id="main-wrapper">
         <div class="page p-4">
             <h1>Swachitra</h1>
@@ -25,10 +29,10 @@
             <div class="img-wrapper center my-4">
                 <div id="zoom-img-container" class="zoom-img-container shadow-lg center">
                     <!-- <a id="cross" href="" onclick="exitFullscreen()">&times;</a> -->
-                    <div class="zoom-img" style="background-image: url('./res/images/image0_prev.jpg')"></div>
+                    <div class="zoom-img" style="background-image: url('./res/images/mosaic-final-lowest.jpg')"></div>
                 </div>
                 <!-- <button id="fullscreen-btn" class="btn btn-primary my-3">View in Fullscreen</button> -->
-                <a href="./res/images/image0.jpg" download><button class="btn btn-primary my-3">Download</button></a>
+                <a href="./res/images/mosaic-final.jpg" download><button class="btn btn-primary my-3">Download Full Res</button></a>
                 <div id="text" class="container mt-3 p-0">
                     <p>
                         On the occasion of the 74<sup>th</sup> Independance Day, the Art Society of IIIT-H
