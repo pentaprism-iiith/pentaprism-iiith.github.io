@@ -172,20 +172,20 @@ sup {
 
 @font-face {
     font-family: "pt sans reg";
-    src: url("../res/fonts/PT_Sans/PT_Sans-Web-Regular.ttf");
+    src: url("../fonts/PT_Sans/PT_Sans-Web-Regular.ttf");
 }
 
 @font-face {
     font-family: "Lato";
-    src: url("../res/fonts/Lato/Lato-Regular.ttf");
+    src: url("../fonts/Lato/Lato-Regular.ttf");
 }
 
 @font-face {
     font-family: "Lato Bold";
-    src: url("../res/fonts/Lato/Lato-Bold.ttf");
+    src: url("../fonts/Lato/Lato-Bold.ttf");
 }
 
 @font-face {
     font-family: "Lato ExtraBold";
-    src: url("../res/fonts/Lato/Lato-Black.ttf");
+    src: url("../fonts/Lato/Lato-Black.ttf");
 }
