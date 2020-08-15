@@ -1,5 +1,5 @@
 body {
-    background-image: url("bg.png");
+    background-image: url("../images/bg.png");
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -71,6 +71,20 @@ sup {
     margin-right: auto;
     width: 100%;
 }
+
+.center2 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.center-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
 /* TESTING */
 
