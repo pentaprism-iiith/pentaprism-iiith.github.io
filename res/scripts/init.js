@@ -19,7 +19,7 @@ function init() {
     }, 1800);
 
     setTimeout(() => {
-        const formLink = "https://forms.gle/tfnnxsLpcU1hgUdG6";
+        const formLink = "";
         window.location.href = formLink; 
     }, 2500);
 }
