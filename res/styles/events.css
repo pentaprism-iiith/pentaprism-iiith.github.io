@@ -26,6 +26,10 @@ body {
     min-height: 20vh;
 }
 
+#event-freshersVid .tab-content {
+    border-top-left-radius: 6px;
+}
+
 .event-box .nav-tabs {
     border-color: transparent;
 }
