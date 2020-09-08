@@ -1,1 +1,2 @@
-# pentaprism-iiith.github.io
+# Pentaprism Website
+Website for Pentaprism, IIIT-H.

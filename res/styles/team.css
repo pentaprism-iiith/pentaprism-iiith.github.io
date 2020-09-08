@@ -1,0 +1,333 @@
+*{
+    margin-left: auto;
+    /* margin-right: auto; */
+    padding: auto;
+	  box-sizing: border-box;
+}
+
+html{
+	font-size: 10px;
+	font-family: "Roboto", sans-sans-serif;
+  }
+
+  a{
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  section{
+    padding: 10rem 0;
+    background-color: #fff;
+  }
+  
+  .heading{
+    text-transform: uppercase;
+    font-size: 5rem;
+    letter-spacing: 3px;
+    margin-right: -3px;
+    margin-bottom: 5rem;
+    text-align: center;
+    color: #333;
+    position: relative;
+  }
+  
+  .heading::after{
+    content: "";
+    width: 10rem;
+    height: .8rem;
+    background-color: #43e19f;
+    position: absolute;
+    bottom: -2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 2rem
+  }
+  
+  .position-div {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+  }
+  
+  .position{
+    text-transform: uppercase;
+    font-size: 3rem;
+    letter-spacing: 3px;
+    margin-top: 1rem;
+    /* margin-right: -3px; */
+    margin-bottom: 1rem;
+    color: #333;
+    position: relative;
+  }
+  
+  .position::after{
+    content: "";
+    width: 10rem;
+    height: .8rem;
+    background-color: #FA8072;
+    position: absolute;
+    bottom: -2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 2rem
+  }
+  
+  .card-wrapper{
+     display: flex;
+     align-items: center;
+     align-content: center;
+     flex-direction: column;
+  }
+  
+  .card{
+    width: 33rem;
+    background-color: #E6E6FA;
+    display: flex;
+    flex-direction: column;
+    border-top-left-radius: 5%;
+    border-top-right-radius: 5%;
+    border-radius: 5%;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 0;
+    box-shadow: .5rem .5rem 3rem rgba(0,0,0,0.2);
+  
+  }
+  
+  .card .card-img{
+    width: 100%;
+    height: 26rem;
+    object-fit: cover;
+    border-top-left-radius: 5%;
+    border-top-right-radius: 5%;
+    margin-bottom: -0.5rem;
+    z-index: 9;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 78%, 0% 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 78%, 0% 100%);
+  }
+  
+  .profile-img{
+    width: 20rem;
+    height: 20rem;
+    object-fit: cover;
+    border-radius: 50%;
+    /*Can make border radius 40 for a slightly boxy look
+    But I prefer circle because it's representive of a camera*/
+    margin-top: -13rem;
+    margin-right: 6rem;
+    z-index: 99;
+    border: 1rem solid #ebeef8;
+  }
+  
+  .card:hover{
+    transform: scale(1,1);
+  }
+  
+  .card h1{
+    font-size: 3rem;
+    color: #333;
+    margin-top: 1.5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .seg{
+  /*  margin-bottom: 1rem;
+    margin-top: 1rem;*/
+    /* margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center; */
+  }
+  
+  .job-title{
+    color: #777;
+    margin: auto;
+    margin-top: 0rem;
+    font-size: 1.75rem;
+    font-weight: 500;
+  }
+  
+  .email{
+    font-size: 1.75rem;
+    margin: auto;
+    margin-top: 1.5rem;
+    font-size: italic;
+    text-align: center;
+    color: #333;
+  }
+  
+  .social-media{
+    width: 100%;
+    list-style: none;
+    /* display: flex; */
+    justify-content: center;
+    margin: auto;
+    padding: 2rem 0rem;
+    /* padding-right: 14.5rem; */
+    border-top: 1px solid rgba(0,0,0,0.1);
+  }
+  
+  .social-media i{
+    font-size: 3rem;
+    transition: ease color .3s;
+  }
+  
+  .fa-linkedin{
+    color: #3b5999;
+    margin-left: 46%;
+    /* margin-left: 11rem; */
+  }
+  
+  .fa-linkedin:hover{
+  transform: translateY(-2px);
+  color: #ADD8E6;
+  }
+  
+  @media screen and (min-width: 700px){
+    .card-wrapper{
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .card{
+      margin: 2rem;
+      transition: transform .5s;
+    }
+  
+  
+    @keyframes fadein {
+        from { opacity: 0; }
+        to   { opacity: 1; }
+    }
+  
+    /* Firefox < 16 */
+    @-moz-keyframes fadein {
+        from { opacity: 0; }
+        to   { opacity: 1; }
+    }
+  
+    /* Safari, Chrome and Opera > 12.1 */
+    @-webkit-keyframes fadein {
+        from { opacity: 0; }
+        to   { opacity: 1; }
+    }
+  
+    /* Internet Explorer */
+    @-ms-keyframes fadein {
+        from { opacity: 0; }
+        to   { opacity: 1; }
+    }
+  
+      .card:nth-child(1){
+        animation: fadein .25s .5s backwards;
+      }
+      .card:nth-child(2){
+        animation: fadein .5s .75s backwards;
+      }
+      .card:nth-child(3){
+        animation: fadein .75s 1s backwards;
+      }
+      .card:nth-child(4){
+        animation: fadein 1s 1.25s backwards;
+      }
+      .card:nth-child(5){
+        animation: fadein 1.25s 1.5s backwards;
+      }
+      .card:nth-child(6){
+        animation: fadein 1.5s 1.75s backwards;
+      }
+      .card:nth-child(7){
+        animation: fadein 1.75s 2s backwards;
+      }
+      .card:nth-child(8){
+        animation: fadein 2s 2.25s backwards;
+      }
+      .card:nth-child(9){
+        animation: fadein 2.25s 2.5s backwards;
+      }
+      .card:nth-child(10){
+        animation: fadein 2.5s 2.75s backwards;
+      }
+      .card:nth-child(11){
+        animation: fadein 2.75s 3s backwards;
+      }
+      .card:nth-child(12){
+        animation: fadein 3s 3.25s backwards;
+      }
+      .card:nth-child(13){
+        animation: fadein 3.25s 3.5s backwards;
+      }
+      .card:nth-child(14){
+        animation: fadein 3.5s 3.75s backwards;
+      }
+      .card:nth-child(15){
+        animation: fadein 3.75s 4s backwards;
+      }
+  }
+  
+  
+  .center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%;
+  }
+  
+  /* Three columns side by side */
+  .column {
+   float: left;
+   width: 33.3%;
+   margin-bottom: 16px;
+   padding: 0 8px;
+  }
+  
+  /* Display the columns below each other instead of side by side on small screens */
+  @media screen and (max-width: 650px) {
+   .column {
+     width: 100%;
+     display: block;
+   }
+  }
+  
+  /* Add some shadows to create a card effect */
+  .card {
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Some left and right padding inside the container */
+  .container {
+   padding: 0 16px;
+  }
+  
+  /* Clear floats */
+  .container::after, .row::after {
+   content: "";
+   clear: both;
+   display: table;
+  }
+  
+  .title {
+   color: grey;
+  }
+  
+  .button {
+   border: none;
+   outline: 0;
+   display: inline-block;
+   padding: 8px;
+   color: white;
+   background-color: #000;
+   text-align: center;
+   cursor: pointer;
+   width: 100%;
+  }
+  
+  .button:hover {
+   background-color: #555;
+  }
+  

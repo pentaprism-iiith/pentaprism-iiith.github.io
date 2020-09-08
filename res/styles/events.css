@@ -1,0 +1,53 @@
+body {
+    background: url("../images/bg-7.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.event-box {
+    font-family: "pt sans reg";
+}
+
+.event-box .event-heading {
+    font-family: "lato extrabold";    
+}
+
+.event-banner {
+    width: 100%;
+    border-radius: 6px;
+}
+
+.event-box .tab-content {
+    border-radius: 6px;
+    border-top-left-radius: 0;
+    background-color: rgba(255, 255, 255, 0.8);
+    min-height: 20vh;
+}
+
+.event-box .nav-tabs {
+    border-color: transparent;
+}
+
+.event-box .nav-item {
+    min-width: 20%;
+    text-align: center;
+    font-size: medium;
+}
+
+.event-box .nav-item {
+    background-color: rgba(255, 255, 255, 0.6);
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+.event-box .nav-item:active {
+    background-color: white;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+.event-box .nav-link {
+    color: black;
+}

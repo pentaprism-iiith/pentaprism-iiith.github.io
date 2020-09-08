@@ -1,93 +1,38 @@
-html {
-    overflow-y: hidden;
-}
-
-html body {
-    background-color: white;
-    margin: 0px;
-}
-
-#main-wrapper {
-    opacity: 0;
-    transition: ease 2s opacity;
-    position: relative;
-    background-size: cover;
-    background-position: bottom;
-}
-
-.page {
-    /* box-sizing: border-box; */
-    height: 100vh;
-    width: 100vw;
-}
-
-#image-form {
-    display: block;
-    margin: auto;
+.navbar {
+    /* background-color: rgba(0, 0, 0, .7); */
+    background-color: rgba(255, 255, 255, 0.95);
+    transition-duration: .5s;
     border-radius: 6px;
+    min-height: 90px;
 }
 
-#page1 {
-    justify-content: center;
-    align-items: center;
-    border-radius: 6px;
-    text-align: center;
-    font-family: "pt sans reg";
-    opacity: 0;
-    transition: ease 1s opacity;
+.navbar-brand {
+    /* background-color: white; */
+    max-width: 78%;
 }
 
-#page1 .container {
-    align-content: center;
-    border-radius: 6px;
-    /* background: url('../images/ezgif.com-optimize.gif'); */
-    background-color: rgba(0, 0, 0, 0.4);
+.navbar-brand span {
+    font-size: 40px;
 }
 
-#page1 h1 {
-    font-size: max(12vw, 90px);
-    font-family: "Lato ExtraBold"
+.navbar-toggler {
+    max-width: 20%;
 }
 
-#page1 img {
-    /* min-height: 50px; */
-    height: 100px;
-    width: 100px;
-    max-height: 200px;
-    border-radius: 10px;
+.nav-item {
+    font-family: 'pt sans reg';
+    /* font-size: 1.2rem; */
+    font-size: 19px
 }
 
-#camera-gif-figure {
-    position: absolute;
-    z-index: -100;
-    opacity: 0;
-    width: 100vw;
-    /* transition: ease 0.3s opacity; */
-    /* height: 300px; */
+.nav-link {
+    border-bottom: 1px solid rgb(245, 245, 245);
 }
 
-#camera-gif {
-    position: relative;
-    transition: ease 0.4s opacity;
-    bottom: 0px;
-    width: 30vw;
-    max-width: 300px;
+.nav-link:hover {
+    border-bottom-color: #5eecff;
+    transition: border-bottom-color linear .5s
 }
-
-/* @media (max-width:700px) {
-    #page1 h1 {
-        font-size: 70px;
-    }
-}
-
-@media (max-width:600px) {
-    #page1 h1 {
-        font-size: 50px;
-    }
-    #page1 h3 {
-        font-size: 20px;
-    }
-} */
 
 .center {
     display: block;
@@ -96,10 +41,61 @@ html body {
     width: 50%;
 }
 
-.center-flex {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.slide-container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 800px;
+  height: 600px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.image-container {
+  width: 3200px;
+  height: 600px;
+  position: relative;
+  -webkit-transition: left 2s ease-in-out;
+  -moz-transition: left 2s ease-in-out;
+  -ms-transition: left 2s ease-in-out;
+  -o-transition: left 2s ease-in-out;
+  transition: left 2s ease-in-out;
+}
+
+.slider-image {
+  float: left;
+  margin: 0px;
+  padding: 0px;
+}
+
+.button-container {
+  top: -20px;
+  position: relative;
+}
+
+.slider-button {
+  display: inline-inline-block;
+  height: 10px;
+  width: 10px;
+  border-radius: 5px;
+  background-color: white;
+}
+
+/*--TARGET SELECTOR--*/
+
+#slider-image-Ranges_and_Ganges:target ~ .image-container{
+  left: 0px;
+}
+
+#slider-image-Felicity_2020:target ~ .image-container{
+  left: -800px;
+}
+
+#slider-image-Batu_Caves:target ~ .image-container{
+  left: -1600px;
+}
+
+#slider-image-Visitor:target ~ .image-container{
+  left: -2400px;
 }
 
 /*--FONTS--*/
