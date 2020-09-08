@@ -217,7 +217,7 @@ html body {
     max-width: 300px;
 }
 
-iframe {
+#fbpoll {
     min-height: 720px;
     width: 500px;
 }
@@ -259,7 +259,7 @@ iframe {
 }
 
 @media (max-width:500px) {
-    iframe {
+    #fbpoll {
         width: 95%;
     }
 }
