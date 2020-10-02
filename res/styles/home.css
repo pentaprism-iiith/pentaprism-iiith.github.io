@@ -1,9 +1,11 @@
-html body {
+html, body {
     background: white;
 
     transition: ease 2s background;
     padding: 0;
     margin: 0;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 #main-wrapper {
