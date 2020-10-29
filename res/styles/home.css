@@ -1,9 +1,10 @@
-html body {
+html, body {
     background: white;
-
     transition: ease 2s background;
     padding: 0;
     margin: 0;
+    max-width: 100%;
+    overflow-x: auto;
 }
 
 #main-wrapper {
@@ -169,6 +170,25 @@ html body {
 
 #img4 {
     background-image: url('../images/c-eye-past-winners/June_Batu_Caves.png');
+    /*  max-width: 100%;
+    border: 1px solid red;
+    max-width: 1200px;
+    max-height: 60%;
+    height: auto;
+    align-content: center;  */
+}
+
+#img5 {
+    background-image: url('../images/c-eye-past-winners/Jalpreet_July.jpg');
+    /*  max-width: 100%;
+    border: 1px solid red;
+    max-width: 1200px;
+    max-height: 60%;
+    height: auto;
+    align-content: center;  */
+}
+#img6 {
+    background-image: url('../images/c-eye-past-winners/August_Brijesh.jpg');
     /*  max-width: 100%;
     border: 1px solid red;
     max-width: 1200px;
